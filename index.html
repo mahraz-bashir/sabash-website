@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SABASH TRADE LINK LIMITED - Bureau De Change</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #1e1e2f; /* darker, user-friendly background */
+      color: #f1f1f1;     
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4b0082;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 5px solid #ff9900;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .logo {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* Currency cards */
+    .currencies {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+
+    .currencies a {
+      background: #2c2f33;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      font-weight: bold;
+      text-align: center;
+      width: 120px;
+      text-decoration: none;
+      color: #fff;
+
+      /* Initial state for animation */
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .currencies a:nth-child(1) { animation-delay: 0.2s; }
+    .currencies a:nth-child(2) { animation-delay: 0.4s; }
+    .currencies a:nth-child(3) { animation-delay: 0.6s; }
+    .currencies a:nth-child(4) { animation-delay: 0.8s; }
+    .currencies a:nth-child(5) { animation-delay: 1s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hover effect */
+    .currencies a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .currencies img {
+      width: 50px;
+      height: 35px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+    }
+
+    /* About Us */
+    .about {
+      background: #2c2f33;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem auto;
+      max-width: 800px;
+      text-align: left;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    }
+
+    .about h3 {
+      margin-bottom: 1rem;
+      color: #ff9900;
+    }
+
+    /* Contact Section */
+    .contact {
+      margin-top: 2rem;
+      opacity: 0;
+      transform: scale(0.9);
+      animation: popIn 0.8s ease forwards;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes popIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .contact-buttons {
+      margin-top: 1rem;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease, background 0.3s ease;
+      color: white;
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5a;
+      transform: scale(1.05);
+    }
+
+    .email-btn {
+      background: #ff9900;
+    }
+
+    .email-btn:hover {
+      background: #e68a00;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      padding: 1rem;
+      background: #2c2f33;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">💱</div>
+    <h1>SABASH TRADE LINK LIMITED</h1>
+    <p>Bureau De Change | RC: 1417579</p>
+  </header>
+
+  <div class="content">
+    <h2>Trusted Currency Exchange in Abuja</h2>
+    <p>We buy and sell major currencies at the best rates. Contact us today for secure and reliable transactions.</p>
+
+    <!-- Currency Cards -->
+    <div class="currencies">
+      <a href="https://wa.me/2348068129651?text=Hello%2C%20I%27d%20like%20to%20know%20today%27s%20rate%20for%20USD">
+        <img src="https://flagcdn.com/w40/us.png" alt="USD">
+        <p>Dollar (USD)</p>
+      </a>
+      <a href="https://wa.me/2348068129651?text=Hello%2C%20I%27d%20like%20to%20know%20today%27s%20rate%20for%20GBP">
+        <img src="https://flagcdn.com/w40/gb.png" alt="GBP">
+        <p>Pound (GBP)</p>
+      </a>
+      <a href="https://wa.me/2348068129651?text=Hello%2C%20I%27d%20like%20to%20know%20today%27s%20rate%20for%20EUR">
+        <img src="https://flagcdn.com/w40/eu.png" alt="EUR">
+        <p>Euro (EUR)</p>
+      </a>
+      <a href="https://wa.me/2348068129651?text=Hello%2C%20I%27d%20like%20to%20know%20today%27s%20rate%20for%20CNY">
+        <img src="https://flagcdn.com/w40/cn.png" alt="CNY">
+        <p>Yuan (CNY)</p>
+      </a>
+      <a href="https://wa.me/2348068129651?text=Hello%2C%20I%27d%20like%20to%20know%20today%27s%20rate%20for%20NGN">
+        <img src="https://flagcdn.com/w40/ng.png" alt="NGN">
+        <p>Naira (NGN)</p>
+      </a>
+    </div>
+
+    <!-- About Us -->
+    <div class="about">
+      <h3>About Us</h3>
+      <p>SABASH TRADE LINK LIMITED is a registered Bureau De Change with RC: 1417579, located in Abuja, Nigeria. We specialize in the buying and selling of major currencies, offering competitive rates and reliable service. Our goal is to provide safe, transparent, and efficient currency exchange solutions to individuals and businesses alike.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+      <h3>Contact Us</h3>
+      <p>Head Office: No.7 AA Funtua House, Kabwe Close, Constantine Street, Wuse Zone 4, Abuja, FCT.</p>
+      <p>📞 08068129651 | 08099519816</p>
+      <p>📧 musaphabashir2@gmail.com</p>
+
+      <div class="contact-buttons">
+        <a href="https://wa.me/2348068129651" class="btn whatsapp-btn">💬 Chat on WhatsApp</a>
+        <a href="mailto:MustafaBashir28@gmail.com" class="btn email-btn">📧 Send Email</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 SABASH TRADE LINK LIMITED. All rights reserved.
+  </footer>
+</body>
+</html>
